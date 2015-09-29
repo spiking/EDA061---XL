@@ -18,7 +18,7 @@ public class TestExpr {
                         return 2;
                     if (name.equals("A1"))
                         return 3;
-                    System.out.println(name + " is undefined");
+                    System.out.println(name + " is undefined.");
                     return 0;
                 }
             };
