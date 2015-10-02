@@ -13,22 +13,21 @@ public class Sheet implements expr.Environment{
 		return sheet;
 	}
 	
-	public void updateSheet() {
-		
+	public void updateSheet(Sheet s) {
+		sheet = s.sheet;
 	}
 	
 	public Slot getSlot(Address address) {
-		return null;
+		return sheet.get(address);
 	}
 	
 	public void setSlot(Address address, Slot slot) {
-		
+		sheet.put(address, slot);
 	}
 	
 	@Override
 	public double value(String name) {
-		// TODO Auto-generated method stub
-		return 0;
+		return sheet.get(new Address(name)).getValue();
 	}
 
 }

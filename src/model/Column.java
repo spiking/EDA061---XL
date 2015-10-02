@@ -7,5 +7,7 @@ public class Column {
 		this.col = col;
 	}
 	
-
+	public String toString() {
+		return Character.toString(col);
+	}
 }

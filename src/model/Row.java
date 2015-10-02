@@ -7,4 +7,8 @@ public class Row {
 		this.row = row;
 	}
 	
+	public String toString() {
+		return Integer.toString(row);
+	}
+	
 }
