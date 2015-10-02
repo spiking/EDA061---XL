@@ -1,4 +1,4 @@
-package model;
+package gui.menu;
 
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
