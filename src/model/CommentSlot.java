@@ -1,5 +1,7 @@
 package model;
 
+import expr.Environment;
+
 public class CommentSlot implements Slot {
 	private String comment;
 	
@@ -8,9 +10,12 @@ public class CommentSlot implements Slot {
 	}
 
 	@Override
-	public double getValue() {
-		// TODO Auto-generated method stub
+	public double getValue(Environment e) {
 		return 0;
 	}
-
+	
+	@Override
+	public String toString() {
+		return comment;
+	}
 }
