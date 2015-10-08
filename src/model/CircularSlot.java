@@ -15,7 +15,4 @@ public class CircularSlot implements Slot {
 	public double getValue(Environment e) {
 		throw new XLException("ERROR BIATCH (CIRCULAR)");
 	}
-	
-	
-	
 }

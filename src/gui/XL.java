@@ -35,7 +35,7 @@ public class XL extends JFrame implements Printable {
         JPanel sheetPanel = new SheetPanel(ROWS, COLUMNS);
         
         CurrentSlot cs = new CurrentSlot();
-        sheet = new Sheet(null, null);
+   //   sheet = new Sheet(null, null);
 
         Editor editor = new Editor(sheet, statusLabel, cs);
         
